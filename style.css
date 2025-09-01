@@ -1,0 +1,109 @@
+  .fade-out {
+    animation: fadeOut 1s forwards;
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }  
+
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+/* Thanh menu */
+header {
+  background: transparent;
+  padding: 20px;
+  position: sticky;
+  top: 2px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  background: #0586db;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #1abc9c;
+  transform: scale(1.05);
+}
+
+/* Hero text giữa màn hình */
+.hero {
+  flex: 1; /* chiếm phần còn lại màn hình */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 10px;
+  animation: glow 2s infinite alternate;
+}
+
+.subtitle {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #fff; }
+  to { text-shadow: 0 0 20px cyan; }
+}
+
+/* Responsive điện thoại */
+@media (max-width: 600px) {
+  .title {
+    font-size: 24px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+  nav a {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}
+/* Zoom-out */
+.zoom-out {
+  animation: zoomOut 1.5s forwards;
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
