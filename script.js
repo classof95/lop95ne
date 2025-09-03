@@ -1,3 +1,5 @@
+
+
 // Chạy sau khi DOM load
 document.addEventListener("DOMContentLoaded", () => {
   // chọn tất cả link trong menu
@@ -18,3 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+const text = "95 - THCS Huỳnh Phước  "; // 
+let i = 0;
+
+function typing() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 90);
+  }
+}
+typing();
