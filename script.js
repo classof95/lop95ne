@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-const text = "95 - THCS Huỳnh Phước  "; // 
+const text = "9/5 - THCS Huỳnh Phước  "; // 
 let i = 0;
 
 function typing() {
@@ -31,3 +31,4 @@ function typing() {
   }
 }
 typing();
+
