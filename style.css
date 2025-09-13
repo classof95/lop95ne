@@ -13,7 +13,7 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(270deg, #ffffff, #000000);
+  background: linear-gradient(270deg, #fdfbfb, #f3e9bf);
   background-size: 200% 200%;
   animation: movePastel 12s ease infinite;
   color: white;
@@ -26,15 +26,67 @@ body {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+.note {
+  background: #fff8dc; /* vàng pastel dịu */
+  border: 2px solid #f6d365; /* viền vàng cam nhạt */
+  color: #444; /* chữ đậm dễ đọc */
+  padding: 20px;
+  margin: 100px auto;
+  margin-top: 40px;
+  width: 70%;
+  border-radius: 12px;
+  box-shadow: 4px 6px 15px rgba(0,0,0,0.15);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  line-height: 1.6;
+}
+.note h2 {
+  color: #e6a23c; /* vàng cam đậm để nổi bật tiêu đề */
+}
+
+
+.note2 {
+  background: #fff8dc; /* vàng pastel dịu */
+  border: 2px solid #f6d365; /* viền vàng cam nhạt */
+  color: #444; /* chữ đậm dễ đọc */
+  padding: 20px;
+  margin: 140px auto;
+  margin-top: 40px;
+  width: 70%;
+  border-radius: 12px;
+  box-shadow: 4px 6px 15px rgba(0,0,0,0.15);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  line-height: 1.6;
+}
+.note2 h2 {
+  color: #e6a23c; /* vàng cam đậm để nổi bật tiêu đề */
+}
+.note3 {
+  background: #fff8dc; /* vàng pastel dịu */
+  border: 2px solid #f6d365; /* viền vàng cam nhạt */
+  color: #444; /* chữ đậm dễ đọc */
+  padding: 20px;
+  margin: 900px auto;
+  margin-top: 10px;
+  width: 70%;
+  border-radius: 12px;
+  box-shadow: 4px 6px 15px rgba(0,0,0,0.15);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  line-height: 1.6;
+}
+.note3 h2 {
+  color: #e6a23c; /* vàng cam đậm để nổi bật tiêu đề */
+}
+
 
 /* Thanh menu */
 header {
   background: transparent;
-  padding: 10px;
+  padding: 0px;
   /* chừa thêm không gian cho notch nếu có (iOS) */
   padding-top: calc(10px + env(safe-area-inset-top, 0px));
   position: sticky;
   top: 1;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center; /* căn giữa dọc */
@@ -48,6 +100,7 @@ header {
   font-size: 28px;
   line-height: 1.2;
   animation: glow 2s infinite alternate;
+  color: #000000;
 }
 
 /* Responsive mobile */
@@ -67,6 +120,7 @@ nav {
   justify-content: center;
   gap:10px;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .nav-animate {
@@ -91,9 +145,9 @@ nav {
 }
 
 nav a {
-  background: #0586db;
+  background: linear-gradient(270deg, #e69603, #f0ead1);
   color: white; 
-  padding: 10px 15px;
+  padding: 20px 15px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
@@ -102,6 +156,7 @@ nav a {
   opacity: 0;
   transform: translateY(20px);
   animation: slideUp 0.5s forwards;
+
 }
 nav a:nth-child(1) { animation-delay: 0.2s; }
 nav a:nth-child(2) { animation-delay: 0.4s; }
@@ -126,23 +181,12 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
-}
-
-.title {
-  font-size: 32px;
-  margin-bottom: 10px;
-  animation: glow 2s infinite alternate;
-}
-
-.subtitle {
-  font-size: 16px;
-  opacity: 0.9;
+  padding: 0px;
 }
 
 @keyframes glow {
   from { text-shadow: 0 0 5px #fff; }
-  to { text-shadow: 0 0 20px cyan; }
+  to { text-shadow: 0 0 20px rgb(238, 163, 0); }
 }
 
 /* Responsive điện thoại */
