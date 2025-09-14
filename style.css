@@ -27,9 +27,9 @@ body {
   100% { background-position: 0% 50%; }
 }
 .note {
-  background: #fff8dc; /* vàng pastel dịu */
-  border: 2px solid #f6d365; /* viền vàng cam nhạt */
-  color: #444; /* chữ đậm dễ đọc */
+  background: #fff8dc; 
+  border: 2px solid #f6d365; 
+  color: #444; 
   padding: 20px;
   margin: 100px auto;
   margin-top: 40px;
@@ -40,14 +40,14 @@ body {
   line-height: 1.6;
 }
 .note h2 {
-  color: #e6a23c; /* vàng cam đậm để nổi bật tiêu đề */
+  color: #e6a23c; 
 }
 
 
 .note2 {
-  background: #fff8dc; /* vàng pastel dịu */
-  border: 2px solid #f6d365; /* viền vàng cam nhạt */
-  color: #444; /* chữ đậm dễ đọc */
+  background: #fff8dc; 
+  border: 2px solid #f6d365; 
+  color: #444; 
   padding: 20px;
   margin: 140px auto;
   margin-top: 40px;
@@ -58,12 +58,12 @@ body {
   line-height: 1.6;
 }
 .note2 h2 {
-  color: #e6a23c; /* vàng cam đậm để nổi bật tiêu đề */
+  color: #e6a23c; 
 }
 .note3 {
-  background: #fff8dc; /* vàng pastel dịu */
-  border: 2px solid #f6d365; /* viền vàng cam nhạt */
-  color: #444; /* chữ đậm dễ đọc */
+  background: #fff8dc; 
+  border: 2px solid #f6d365; 
+  color: #444;
   padding: 20px;
   margin: 900px auto;
   margin-top: 10px;
@@ -74,24 +74,24 @@ body {
   line-height: 1.6;
 }
 .note3 h2 {
-  color: #e6a23c; /* vàng cam đậm để nổi bật tiêu đề */
+  color: #e6a23c; 
 }
 
-/* Thanh menu */
+
 header {
   background: transparent;
   padding: 0px;
-  /* chừa thêm không gian cho notch nếu có (iOS) */
+
   padding-top: calc(10px + env(safe-area-inset-top, 0px));
   position: sticky;
   top: 1;
   margin-top: 25px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* căn giữa dọc */
-  align-items: center;     /* căn giữa ngang */
+  justify-content: center;
+  align-items: center;     
   gap: 8px;
-  min-height: 80px;        /* đủ cao cho Android notch */
+  min-height: 80px;       
 }
 
 .namehead {
@@ -102,13 +102,13 @@ header {
   color: #000000;
 }
 
-/* Responsive mobile */
+
 @media (max-width: 600px) {
   header {
-    min-height: 70px; /* thu nhỏ header cho màn hình nhỏ */
+    min-height: 70px;
   }
   .namehead {
-    font-size: 22px;  /* chữ nhỏ lại cho vừa */
+    font-size: 22px;  
     margin-top: 5px;
   }
 }
@@ -123,20 +123,20 @@ nav {
 }
 
 .nav-animate {
-  transform: translateY(50px); /* bắt đầu thấp hơn */
-  opacity: 0;                  /* mờ dần */
-  animation: slideUp 0.8s forwards; /* gọi animation */
-  animation-delay: 0.2s;       /* delay trước khi chạy */
+  transform: translateY(50px);
+  opacity: 0;               
+  animation: slideUp 0.8s forwards;
+  animation-delay: 0.2s;   
 }
 
 @keyframes slideUp {
   to {
-    transform: translateY(0); /* di chuyển lên vị trí thật */
-    opacity: 1;               /* hiện đầy đủ */
+    transform: translateY(0); 
+    opacity: 1;             
   }
 }
 
-/* Tùy chọn style cho nav */
+
 nav {
   display: flex;
   gap: 20px;
@@ -172,9 +172,9 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* Hero text giữa màn hình */
+
 .hero {
-  flex: 1; /* chiếm phần còn lại màn hình */
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -188,7 +188,7 @@ nav a:hover {
   to { text-shadow: 0 0 20px rgb(238, 163, 0); }
 }
 
-/* Responsive điện thoại */
+
 @media (max-width: 600px) {
   .title {
     font-size: 24px;
@@ -201,7 +201,7 @@ nav a:hover {
     font-size: 14px;
   }
 }
-/* Zoom-out */
+
 .zoom-out {
   animation: zoomOut 1.5s forwards;
 }
@@ -216,4 +216,5 @@ nav a:hover {
     opacity: 0;
   }
 }
+
 
