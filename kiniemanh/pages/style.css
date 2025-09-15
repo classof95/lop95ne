@@ -29,6 +29,17 @@
   header p {
     font-size: 1.2rem;
   }
+
+  header a {
+    background: linear-gradient(270deg, #f2f3b7, #ddd79d);
+  color: white; 
+  padding: 7px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: auto;
+  margin-left: 15px;
+
   
   /* Phần Gallery chứa các ảnh kỉ niệm */
   .gallery {
@@ -87,4 +98,5 @@
     100% {
       filter: blur(0);
     }
+
   }
