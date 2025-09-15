@@ -1,0 +1,44 @@
+.note {
+  background: transparent;
+  border: 2px solid #000000; /* viền vàng cam nhạt */
+  color: #444; /* chữ đậm dễ đọc */
+  padding: 20px;
+  margin: 900px auto;
+  margin-top: 40px;
+  width: 70%;
+  border-radius: 12px;
+  box-shadow: 4px 6px 15px rgba(0,0,0,0.15);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+.note h2 {
+  color: #000000; /* vàng cam đậm để nổi bật tiêu đề */
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(270deg, #ffffff,#dcc9ec );
+  background-size: 200% 200%;
+  animation: movePastel 12s ease infinite;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+@keyframes movePastel {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.note a{
+    background: linear-gradient(270deg, #e7b8f3, #7c11e0);
+  color: white; 
+  padding: 7px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: auto;
+  margin-left: 65px;
+
+}
