@@ -40,7 +40,7 @@
   margin: auto;
   margin-left: 15px;
 
-  
+  }
   /* Phần Gallery chứa các ảnh kỉ niệm */
   .gallery {
     display: grid;
@@ -100,3 +100,4 @@
     }
 
   }
+
