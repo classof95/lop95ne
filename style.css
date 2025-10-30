@@ -26,57 +26,25 @@ body {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-.note {
+/* code new */
+.note, .note2, .note3 {
   background: #fff8dc; /* vàng pastel dịu */
   border: 2px solid #f6d365; /* viền vàng cam nhạt */
   color: #444; /* chữ đậm dễ đọc */
-  padding: 20px;
-  margin: 100px auto;
-  margin-top: 40px;
+  padding: 25px;
+  margin: 40px auto;
   width: 70%;
   border-radius: 12px;
   box-shadow: 4px 6px 15px rgba(0,0,0,0.15);
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
 }
-.note h2 {
-  color: #e6a23c; /* vàng cam đậm để nổi bật tiêu đề */
+.note h2, .note2 h2, .note3 h2 {
+    color: #e69933;
+    font-size: 24px;
+    margin-bottom: 15px;
 }
-
-
-.note2 {
-  background: #fff8dc; /* vàng pastel dịu */
-  border: 2px solid #f6d365; /* viền vàng cam nhạt */
-  color: #444; /* chữ đậm dễ đọc */
-  padding: 20px;
-  margin: 140px auto;
-  margin-top: 40px;
-  width: 70%;
-  border-radius: 12px;
-  box-shadow: 4px 6px 15px rgba(0,0,0,0.15);
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-}
-.note2 h2 {
-  color: #e6a23c; /* vàng cam đậm để nổi bật tiêu đề */
-}
-.note3 {
-  background: #fff8dc; /* vàng pastel dịu */
-  border: 2px solid #f6d365; /* viền vàng cam nhạt */
-  color: #444; /* chữ đậm dễ đọc */
-  padding: 20px;
-  margin: 900px auto;
-  margin-top: 10px;
-  width: 70%;
-  border-radius: 12px;
-  box-shadow: 4px 6px 15px rgba(0,0,0,0.15);
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-}
-.note3 h2 {
-  color: #e6a23c; /* vàng cam đậm để nổi bật tiêu đề */
-}
-
+/* code new end */
 
 /* Thanh menu */
 header {
@@ -217,3 +185,4 @@ nav a:hover {
     opacity: 0;
   }
 }
+
